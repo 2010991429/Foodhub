@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodhub</title>
+
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="./assets/css/foodhub.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-wrapper">
+
+          <a href="#">
+            <img src="./assets/images/logo.svg" alt="logo" width="130">
+          </a>
+
+          <ul class="navbar-nav">
+
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li>
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#menu" class="nav-link">Our Menu</a>
+            </li>
+
+            <li>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+
+          </ul>
+
+          <div class="navbar-btn-group">
+
+            <button class="shopping-cart-btn">
+              <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+              <span class="count">5</span>
+            </button>
+
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div class="cart-box">
+
+        <ul class="cart-box-ul">
+
+          <h4 class="cart-h4">Your order.</h4>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Saumon gravlax</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>720
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Chevrefried with honey</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>1120
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Crispy fish</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>320
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Stracciatella</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>880
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Sea bream carpaccio</h5>
+              <p class="product-price">
+                <span class="small">Rs</span>1520
+              </p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">View order</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+      <section class="home" id="home">
+
+        <div class="home-left">
+
+          <p class="home-subtext">Hi, new friend!</p>
+
+          <h1 class="main-heading">We do not cook, we create your emotions!</h1>
+
+          <p class="home-text">
+            Consectetur numquam poro nemo veniam eligendi rem adipisci quo modi
+          </p>
+
+          <div class="btn-group">
+
+            <button class="btn btn-primary btn-icon">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcVFRUYGBcZGhoaGhoaGiAdIhodGRkeHR0dHSMhIiwjHSEpIBoeJDYkKS4vMzMzGiI4PjgwPSwyMy8BCwsLDw4PHhISHjUqIyk0ND0yMjQyMjI0MjoyMjIyMjI6MjIyMjIyMjIyMjIvMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgABB//EAEYQAAECAwUFBQUFBgUDBQEAAAECEQADIQQSMUFRBSJhcYETMpGhsQbB0eHwFEJSYpIjM3KCotIVU7LC8aPT4gdjc5PjQ//EABoBAAIDAQEAAAAAAAAAAAAAAAADAQIEBQb/xAAuEQACAgICAQMDAgUFAAAAAAAAAQIRAyESMQQTQVEiYXGBkTKhwdHwBRUzseH/2gAMAwEAAhEDEQA/AMLX7zKBxvBJPl6xXcSCzFIwdKrvVgv1iAkjBS1FtFpwpocOUcmypP3lfqIy/ihY8J+zbveV+tX97RWHBCa1aophrvEHwjpcpABqeqkn/UC8RVJSWu3hWrEp8kgAGAAhdnJILHqRXw6xWqSoVCARoQPUJMe9igVLkHMrXl1jwIlfdCuDFx4qeAD2Sim6wUwobqg2dAxaJrWHImJDfiuln0xatM49kyko30XnwKRdZXBQusRFjqmbvZqTxSSk/qGPIwp5EnQqWRRdFMnslAuEvrcTTKr9c4s+yywxQpIKsGo7VyO90iEvZib164u8ks61EgEcxiIcq2cAlJnJC5a8tCK+MVnmUXSIllURbIss9d67LStql0qfo+OBwgnaNjly5ZKktqz00bFhjWKZ1huEqszhYLXAw7RJPd/iGWrUD0hjISZktSS4UEoSykvTs0m6rIFlVSoZvWrVlO6knoXLI29dGfFol5TBSm+FYeNYHM2X+OWp/wD21K8aho0e0JEtIUsywh1V/Zo3d0HdZNQ6jC2WpBWAEA7wD9k2eLmHRmmm17DozUlYMiWAg7yUklsxRJYjvuK06RBAmYIm8gFHOmphrbmSoABVQ5uhNCSXxGbP1ge4v8c0aMED0REwdxv5LRdqwX7LPOK1K4FawOGBEdMsihUiWlsTiX1D++DUS11N+YKDEoD6s6B4R59mUo17S9rdlE/6AYsSB3QGJmJd8boFdHSw8o9XU96rfdujxGWfjBcyzMKzEh/8xCB43VD1gcWcsf2kpYxpk+rFhx5wElImBBdw47zkqJSTWpSedHiU4lBcKZNWUQSADkRdw6xfLs6GAN06pSFLccQlLM+cTVISO6lCRXCXdfrdgACTtNDOqupQtn0o97oSYvTtCz5LUPypKq8w3nBKXoxSEscTeyelC3WLl2mZdASpmDVQT6K4eeTwaI2AibLUDd7Q87w9RXrFZKHcSyVUoAt21CkCnR4OReD31h1Ngbr5HdofGsQTZ73dCqZBda6big38wgJKkBCj+6KWxN+YGw4OIvlId8XzeYtXA1NPOKl2cvvJmkhnojCte4X6tEUWRKa3lp5LA/2gcIACez/Mf1H4x0BfZ5f45n/2pjogmyF+r3Vk8355xK+FYYtUFZHMUb3wQlKMDOSBoEgeYiR2XMXWWuXMA/CTf8CPSITJcWgQIJwTXib1NK58YkQsA3iQMauWOGDsIrAqXKlNiCFUbXBvdHqAG7oGe8qn+l2bjFip6iZRgSeSU+WBEVrXMPdv0diU6hiHfjjFygr7pAf8LqfzMVzpRNT2ig2JQ3r8MICCqy7Zmy0qli4+F4pcgcHIHVo1h2JKVLQRaFy5ygCy0hSkk8HDHLHxjFKsd1YLPdOZB5UHxh99muS1TJhKpgF5tKP41bpCMjSpoz5NdGisi5i0KQhQnlJZS1pAC2LKACVAIIbUnA6w4s1lSZVyZKuOkhQCnwzcbz9X5xgdg2sFBCrQrA7l8pCB1pm97U6xRbtuBA7OWssDVSWJmHVRFKPRmHCKSxS5aEOLbobbakSpa0y5SySU3t9aEpUCSGcoVUM1SnGKrDalS13lgJUwAVf7R05OoE3gKipLNRozNntQvhapZIOLqO8GZi7g04QZO2ndKQlCkEMUKvG8zZKOONMOUTLE+PFF+LSpGo9oNoImSjuMsXSGqlQTednFKKJYg90RnFTbqgUhOV4JWo0erUoamOse1FLUEzReTXvgg10UkjzesaTZ2zJd1YVfJWl0KXwcMCAKserO0VjL0otSLQlwVMjZ7BfmJRMLKSoy1FmdaKpJIILLQxGu9pCu0rmJWtIAIClCr1YkOHPXwg+ybSXKKXWkTCBLUVmhAcJNaAsNaV1aPNpyJoUqZNSAFGi0qIlqDsLpBY01L66RbDJ39v8AOi+Nu38CxAVmsJDU3UeFUnz1jioEAdoknW7LJPN0/TRcgDFyX/OeX3U+/nFikrALpVmKrWHfkI0WPooClJqFkA4tcS/K6C2uEeqm175r+X/yb+mLWWHDpDaMo1x768DXLwjkTFMACs4tdUnDBmSGPJ4LJKgVfi6uEjjQnyHhEkS1AEpWFamlDpQtE1oatRdNbyUg61vEmmoEeJSCe8FZOXUaaUCcstIAKEpJO8sKJqUplkvzrXnXnEgwJCRdehJlmngPPFoleJ3cW1UcNQECnHnFa5L4gjN6inA9oH8MvGQJDitShRwFTPVw3hHt4k4qBGq5lAcSxKuscxD99hwYNq3d/qjw4cSdA7dQR0z4wAeEkljvaXZkzP8AlFIiVMXBCD/8qyfAufKPVhsRMYZHAHkbo8o4IUHowAfBqfxIxFcDEAdfmf5q/GZ/bHRf9nV+TxX/AHR0AGTVaFJYtiHxgmx7UKSC5B1i2ds8JUXS60qUFSq7gqxJB3hR6Yx5NsbBQACFIZJBd1hX3gMWYvy5RLjEYuV3ejT2aem1pY3RPA3FtRf5VgEV0PjC9aFCiloTiCGAII5uXemsJ9mzlS1pq4JYHOmsa7baAVpmBh2iQTVt7AsGI49Yp06B/UrQoZJxmEvkCoj+kcIGm3QMLxc5H/ea+EHE175HFw39LfQgK0JckFQ8Tw1URFkKZ2zFuVFZAAIF4/dBxwBNACwGZEOttbspRCCl6TCrBlABL5OxTQawqsNkT2UxbjFlUG6AzE6YnHQxfZrZMmyDKWQuWFApKibyClTkULkEOGOD0pSEyUW7+GZ5Jcr+DLzJClrASHUcgD84eyfZ6XcN9ShMAvMWYgd4U4F/5TWCU2YGhO4QaIUEkgON4vgMak9cI1GyrFfkAdiooB3SogMAKKR3VDDGCeb4FzyN9GQl7HSsBKC5JZNaV0d36QbaVTDJEqfZVTQlRlhYWykKSkEVuGhSQQTQjWGalgKSq6pBSQReMtYI/hTMd+LNwhls/wBoJEyYlEy8hRIukum6pJcFwcOPFjTCqm/yL5Oz5/ZkS0LCTMXcdyAmg/KS9eYTG2lbXlBDVEtqbrk8gA/RyYa+0e0rJMTcmoRM0L93iFBiP5SY+eW0SJZulcxKcQmWlnGNVqqr663li9SrHKpDr7XJmE9ogXXcbygsnV0nd5E5Q1ssiUzyrUuUojurmVVoFElKDyrGJk7QsyFAiSpbZLW4PMCh5Q+svt+qWLqLPLCWAZKUgU5JgeBpUmOjFV7jq02C0EvMlSpofvSyZdMt6+lJ8FREbBmLBKZZlUr2qUqB5TAQTTRGeMBSv/Uyu/ITg1MRyYpaLJ3tTZZ3dKpSjiRMXLL63kDH+O9EcMqWqB66ZOZsPs0iZMnIlJOaEFR5OEpA5XoqG0bPL/dhU1eKVzSFhJ1EtJpWtXI1iu0S501O7alTUBjdmKdiAwIUHSTjU3OUABMxJulIcOSLg83US3SIjGT1J/p0XjtbLbRNXMJWq8pRL3iQmuNHYacohcWaquO1bxSC38pAOVeEelZAqQP0DwBQNcQ+ceIWX3TeGFL6QCdGvA8octdFiSZMwNVLZXiVN5kMdHEUi4MVgEF2F5j+kPwiSgE1AY0f92Ms3KVjm3va5MtRDueYK69ElTxIAiWYsgmuNQAOBUREhaMKh3q80Lc5OEurUdRBCLGFVBBL4gHPmEnq4jlySEutZ4u4B5vMV4gEcILCilZUFdwDOgWPIkecQQoEsG5boL8Kn0gmXZ5dbt3gUqQqnNIBPhHLkjFSmLVCkzFAjqQDBYUQ+zzNFeP/AOUdHn7L/Mk/pH90dAAolpUsKTMS0wAMVqKCAml0AlicQxGAyg9OzldnMTMExNolqcOoJYJuhSRRiag0NXEF9henmZLXfuKStE9SgCpMskgdmVVLpwxIAIxgXadsmWqZ2i1oJXdabeCFBIASU3UknWhBLViLNk4t0l/a/wAiaXIN5K7qgCtg5BppqecbHazFMoFN5kkYs1BWtISbOsyVzQR3EUerLIoGBbCodhyEFW22CZMNHbdDFNNaGKN3JC5JRiyRXjugAAGqX9FAf8QMueasED+E3TpgQYvQlTXkyyz0dwMefKKZgUaKCa5doDzocOUNMwDPtS0hSQVAKABBSKsXyArlyJhciz3ndJbhQdYZzbNWl3PAP6CKlWq6ACmmF4A5cw/0YH1opNP2CpO0BICVBN9RolOVHZ+FU4aQ72BtxU9SkWmcTKL37qGA3gyHAcpIBoGDEknXFzZpWoBAJLFI1qfKmeVYM+1dhLEsKC1BRVgGQpQAJFHJZIDnSjPFViTQhws03tkbKJt+XMYKDzEpS+9+QnXOjDLFhlFbVL3ZKbpJZ8VF+JrABvzFbxNT6w79ntmPOBdrrV4mCUoYoto0YPG5ySQw2f7GWiaLypyUKVgneLvkojDzg1f/AKbWi6VCYFn8IBD54mppwrD1c5aQGcMQ7E5e+kES/aCbLvKSgqa6CcQalwHVT58I5q8vI5d/9HXl4ONLS/cx832UXJAM1CgC+TEHi7gg5YOx5mpFhQ7Ny4gZiNejailrvl6vunVjrp6CF6NnLSQpaOzSoBnwLkAF3LMA5FS2mECzymm2+iZYvTlFJWn39hDM2YnHLWOtOw0EAi6aAkpjUWmwSpYSpU1JC6slJUR0AqYPl+zaQgLSshJYgqSEguCaC9ecNhdfwiI5MtWi81gumfOjs2bLN6StSdKnwgiRt9Q3LTLCh+K6D4ig9DG5VsCZikJWKd1Woo71EL5tjRVMyXeSKKIa8jHAHIHFiIbHy2tTQifgwmuUGLUKlqSDLAUk4FCikgnW6AB1PCI3CT+6cZdpXzvn0hZtCwKs6u1sy3QcU+4iH/s1b7Laf2c69Lma3iw5pLuOTNyqNsZRnG4mGcJY5cZfuAGXMTQGWjCl4Z6hnPSOWleJmDEOwXTwV7o2lo9jpgF6QqXNzu/uyxrQ7yVeKYy1uJkr7OckylVotTPk43kkjiKQKSfRDQGmSVd5RVXEi8+jXxnziK5aEg98Hg6R0uLbCPDtKWHaZLY5MH85in5RUdrSy47S9pup9CAc8RFiA3sE3WKSQ2JWT6uYjKssv7qJWtBjXFwoP1gBW15b94aMO0S3IiYR5RBW1pZoSSNFMeGKgT9GAgb/AGNX5f0q/ujoTf4pJ0H6JXxj2AnRfatlWhSirsQVFZWVpJuqqThd3c3B0wGZVm2DLCEG0KSh1FYCCyiHwKshiGAGLxnFbZmlV4KIP8XygVdqWqhNHfxxhbjL5NLzp97He0to3lFMsBKWYAZAacPWFsvZ2d5QOLg1ePbIjOHMlAapA8vlAnx6FS+t2xSrZF6pWonUmITNmEUK1NgzvG2sexVzLpLS0KoFKo7glkg4lgdHh1LsMqQP2csTFgfvJla6JGXRucUl5Cj9y0fH5Hz6x+xtomh0pUlP4phuDzDnoDDA+wBTLMyZaUI4VUfcR4RqLWqZNDFVKUDs+OXWM37U7U7NHZAjdoeJGA4sGPMjSIx5Z5JUtBkxQxxt7E1jsCe07GSreVQrV91Puc5ceEaWwewcoEqVaUqajFN1jqd74xitlqmJmJUMVF604uX5PH1ewWkqQEzALpSKlLpL1vJIDsXeF+ZlyRa4ukP8Px4Ti21sz9u9m5SShCQSoB1KcXTxRmXPhAkuwKkLp3WDcGo2sfRTJQlCSQklBcXXPFjRxyhDtlUsLUpV9lAkNViXBIwwMYfWnLUn+hvxxhelv5BE2osCMxh1OPhjygnZu3EJWUTpQbDuANoaCojIna5lki6TdULqWxSTgS7joD0i47ZMwC8Go2tMhyrErDKP1FvUhN8Pdf52bFe0JMxYCAAoDFODcByg1WzkqkKVu3mdSieo44NTjyjG7Mm3lgJASebP9eUO7dtcCSzELKwQoMU0cH6whag4ybrtEynHUYvaGGxrGlcsy1FSc74ozjJ+nCmcKbdY50qYELIUgKRcWFEAFRu7wV3ABdepDFTkwVsjbiTQqY0dxUMcRhTKNnJZaM1Ah3NDXSg1xh2CU1Fow+Xhi58n2zO7PlpWpSZipktYO6lKmwOTYvo5wpCb2hkCWtpU0m8GVUGmYLZw/wBq7OSoEKLKAcHKj46c4TjZ0sgC/eJwIYi9pSp90Jlkb7XRqxLHBLdJ+whl2ejgh6a+6EO2dllBEyUWUKkDIjTpV+kaebZyhV0uNI9+zEpIJLHGuJD+Yehyi+HO8crQzPgjlhTLvYj2uKk9ktV1YwOny9OWG3tKZNrlFFqQky3YOMC7AjNKuPGPi21bGZEwTJbgO5Gg4t5x9A9ndrC0yGJqkOz4igbpTxHGOnKpR5w/U4qi4S4S/Qz23PZNFmmMyVSzVJISD/Cq6Mc+IrTAL0WCSFC8gF8kny7vveh5x9QlWdM2V2Mwk3g4ViaYEfmScNQ4zjDzLDMlzFSplFJLXmBCh904hgQzHGrNEwyckRPHxYsOy5f3UAcKeJckx6jZ0sZc2b0g4SS9WpqWPh84vlSn0JFMP+YbYoXf4ej8J8B8Y6GvYD8I/R8o6Ismj5mBDOwbNmTO5KWriEkjxZh1j6Lclo7lnlpb8KAPMRBc5SsSUjICg5UhLzIfHB8iLZvsus1mrRKTi14KV4BgP1dIf2CTZpRZCby/xqL9RVh0AgCXakJVeDkjnAtqtKUG8VBKSw3iB4dOcLbchyhGIb7QbWBYXt5CkzAMilCkhQHG6o+MWL2wHRdpvKrlSj61LeMZabPRNUN4zAAQFALBu4KBdN1QbEllaqjvtSUq3FuDQhIC1M1QiooXqO9XrDfSVUL9T3NNb9qKQkqcPlx06e6Pn80mdOq5ANc3c+pPvh1tLaCpoSEJU53UpKQlRUosAznpXOGuxtjGWyUpSpeJJU2W8cMB6NmYJyWCG+2VhB58mukL52x1KkiYkFwTRiCGPvEE2C02kIAK2SwFcCGq/DLrGoUvs1BbS3Um6UuSHBpVg54saeEXoMuYy0yXI78uuJDkuC2PJo57z8lTSZ0lj4u1aM7I2xMQyQsuMK0wZqUzh+idLMhKpyQpZL0d2oKNhStdRCldil9o60qSguWBrXAg1wPOHNh2RKoUzFqGQvJwxZrrwicora0PS1TM7arBKmEmWpRqd1bBtCABnpU0iNn2cQWCEq6e+NNaNm2dzvhC9SQRyZn84qVZwAb+84F0hiCcAzGgbUdIPWb6ZMYw9kB2aVNQAUoIAVVhjiCz5h8It2nYZZshKLqVAKISAAxDFmB3Sa0piTlB0masPcSmYgBlFQYAjOtAfGB17NnKJ3AxyJRR6ijsRUxeOV6S2hMsEebn06+TNWC3BrubYlIoCWpqfqsbOybYQoICjdoxU7YAEf6ccYxdssqpClIWCD5VOOhEAm11akXlByvjoKjS5O2braO2ZSkKuk99IAxJoXfhU+UBStqSSi6wSUi8lh97GrVqwjHLtwdzXl5R5K2gRMBKCoZZuOGGfKIXivv3DnBri1o3NonyrSjcSUqALg1u4MxNWJehdmMJZJmS1lKsiXz8YYbKSpQKxLUEkAmlQCKHg/vjzacgOFgUOIjPfGTi0aYpVSBbZKTMDEAuCK+NIzWxrQqyWq590l08RmPURokzgzMXBNfSFHtLZ7yBNTRSC/TON3h5eMuL6Zi83DyjyXaPqEpYUkLTmAQeBwgP2ilCZL7RKQZsoaOVIzxbCquitYSezG0zMkCvdajZKc65EE+EO0LY3sXBBfMEQ+S4Toww+uFmF7RQWaoBpumjccYt7ReaQQ2F29i1MtYtt9jVKWpACVMogJLBweaip2arCBLQgYhBScTeNAXycBq/mMa0tGZ9lzJ0T+j5x0VXvy/1fOOgoDTT5YG9NXdfBAqroBhFIRewksMisgnwKg0W/ai26lEvV99R5/MmFk03lutZU2VPdQdPGOe0dFMNm2ZT/u5Y6Aj1jOe0s2YTvJlOA14EO2QrDNcmUrAEHQLPmHaFlr2aD3QPEfMxaFJ2VnbRnETZg3UneXVRJJoO6/AAvzUnMCLezSAzXjSpH4QwLYCJTUXVEZ4HPDCK3jq44qrOVkm7aG+wJbz0qxEtJV1UCkeV49BD60qPabjB0tTRya+UKfZ/dC1fmCeiUg5czB861KSq+90Ah7rNh+JmqDhxMcbyuWTO/haOrgy4/HwRb7eyxdgmKRfqAGdhTLwp7oMsVoMsjs7wXW8SKHH5GLNn2lakkmhVUpPdunBJHL/mIJtsuWWpeq4OD/Rz08cTb3Fdo6adpSa7O9rLWyUTQXw0pqGwxD9YRTrSQjtULStN4BaQWUgqcgkaFjyMHzbabYtctEtIAIOgYBiT1PmIJnexEuWE3py7ygK/drVqAlusaIcYr6+/7ipS6S/yjN/4k5+MaDZdsEyWUK3uGGvHIx6j2PSFFJWFFiQEnFtDX0+fs/ZcuzgTEKUwO8lVafip6RWahNVHtExycZJSfYfs+beVdCCmWnmymyPM5w6l2lN/eUzu/qS2kZGzbdlqdkTEvgQ1CPxcKZVERti1zJkuZLWELSMVh6Ed0gioIUR1LQlYZKS5aX7/ALkZcqmnx217daH3tLKlrdKVJU1Wxx/DU88axgzsZSFqC+8Sxcl+eNQwf6aNJNnC8FAJBWfu4OMhw4xG1ypgSXTuak18A5Favzh+HJLHaa0xOXAskIuMtoy07ZzE0LAjzjQ+yuz6oUWpUvo9WzIZqR5a0BSFhIIGR/E3dcMK45ZnDCKNkbUSxQo3CHHIw3JOUo/TtB49LU9M2akEhSgQkOwSnPjy+EL+1C1dlio5Z1wOkJxt4pX2YqlqLFQ5w5/GCUIBWmY28alhU4M+TAJGWBxjFHE1K8nT6HSytqsVNp7/AAF2ZBlLBZLhsQ7MfP4Rdt8dukqIFUtgPdxhVbNo/tN9BqMaeIo2UXInqWCxpxb6HLhE/XHY9qMvyZr2StnZTFoKroBKX0BqD4gV5xupcsm6QtxkRUa5U+hHzebuWmYBgUg+g90G2DasySoKQptQcFcCPox3Xi9WKku6POep6U3F9Wav2qkqMwFLkFAJTfupJBIrRtMSOkI1SCoChA4E14AYjzhltjaSZ0uVOQhBO+kpUm+QRdLYj50hTJtCfuul6sw4ZFiK9ImF8aYTabtFv2Ia+n/bjos+1HU/pR/dHRYqWy1rUAEpp+Y3utAAOsWCwKu/tJp5Bn8hGP2Tt5SSBNdSRQKzT8Y2NmtJUxQUsQ74k/CMeSMoHQxzjNWj1Fkk3KUL0Nae+BrRZCxuzFfrV6EtDSTLBe8sHpnnW76vAlukSw5BP6n8rrQuMt9kyX2MdaAQtQOLl+NYrJ90E29ACyQ7HXzgRXwjrwdxTONkVSaZqdloaQ4BqpRPiQPQRTJ2WN51LZVSComtK1NTRn4wZsBYMu6cHVXmX98F3GcGPP5cso5JJfLPRYsMMmGKkr0ezpz7qGGpJgSYuWhTTEFbjGrO3nX0hiZASMMtcRw1iW0JI3FA7qkhwoYEFnSQMMy71forDxvbodncklxV7F9gtCU37iAGIALM7vDiVayQ6qpGINcQzdRpCyxykIUsgElbFmzFBnh8tYumTEmKZVUtDoK1sbKnyWSqUSKb/DLz98ATkLPaFTKSpBLmjgJw5s2fPEOGbTLStKlBSZbgLu1ozAkDFlMo50OJhNtTaZXO3CUITeSllVUGbebB600LRqwY7i5fyOT5+ThJR2mtp/0J7PN9AKkgEEg0pzg1Mu6DmnTD0r0aFtkmmpSTXebj8Ia2dSrgdIJwfXiGx5xXLcZf0NnjtZIL7rsP2guWqWmYlBf7qsQNU4umlcA7DFqTsW0ZUxBStTKFK8oSTJq0XroK8SWALOXIAJAyy1gMS7yUrRKmINUqcAjFwb2I0ul+ZcxeUfUTd0Kwx9Csfe+x7NtSEG6sX05tpmeYxbPnAUzY9nmqKkLUkKzqkly1QQ4AfM1LYxZYpQWAlScXoMsPHTr43JUZLodVxRBChUJILhtC4EVw5Vj+kt5XivK+UXT/AJBGy/ZiTupvrvEFnAZgTg5d2AL5v0h5M2MUIIBKsWOlAGz4mES1OA0/eFQLpBJZmoojCn/EXWba4Qk3VqMyjpZ3GetQ2fviM8lJtJ3/AEKeL48opSap9fkV2yehailSgFAtUkEF2d+sCSkEm6FXRrn05v6wXteWJi+0AKXooUFRpzHpHS0C6GcnzMUUkoqjalK3ZlLUD9pW7hktXg9YksR7av38zHuDHEEgUiCzHoMH8ETzPkf8kvyGWBZe49DVnaoB9zwSiW+IFNFfICALI94NDNBJow17g8MjFcn8RbF/CedqPw+Y/uj2LnXw/Sj++PIWMMhtXZkyzTVSZgZSTlUKBwUnUH5YiDNg7VMpQQsq7MnL7p1bSNl7SWZNrsSLSkOuUxfMyz3geWP8p1j57Mktp4mBNTjTCnjlaPqEraMpKKMo5AAkk+FOsKbTtJaiRcuvVt0NzZzGd2FtIhpag4+7vN/LWkPLRZ5hZwJQ1G+ryLDk0ZXj4Oma45OatC22KfvrdqsH9SfQQpUtJBALw1tFiQ7qKlE608g0CTkMKUjRjycdGbLi5ux/7OTkkKTR3B5ukD3Q/WtJSGZxrTECnlSMTsxZCnTiHHvHlebiRDpVqCxia4kj3DGOd5eG8rkuns6fhZV6Sj7rQznWi6kVcElg9X6Pw8IoXalzU7iQpCDWooSdHchzlrCy0kqZjTN8T54QutW0DJmHsu6QKF8cD0LZxTHgT0ux88jW/Y0O1J6nE1mQBdUDofwgaMPPWBk2lMxN5C3GeDjnp1hAq3TJpZSmGLB4lKsCwQqWpzoA5OL4UOGEPWFVUuxUszW10NNoWshDA0wbrXDE/KA7Ds5UysxBAFBiOQMT2ehd4lYLguxpgWOOGUapFtK5ZlploSDmzk6GuY98VnP0lxQuGOPkVNq/szN26y3TuYFJch8QQxGhceUFWHaJ7PeIKmI44/XjGg2bsVK0EzJilKQCooUydwoN1myvDHR+ELk7OkyyV3S5DDdpQgk4u+TNnlC5yTilLfwNwQlGTa18gUicUEHE49DiIeyp0tSAEBmGYr6OBwhdI2fMWoXmKsW4N5w+FmlpR2bXZoDgFxe4tpxFIzTn7L9TS3GLV+70LxJN8KQ6VirsfEMDWLe0lzEXVqKzdDkjNvM46QJZdv3FXFpTeSpmwq9OYw5wyVaJC5dEFASHJAoMSThgM4h3GNNbFu/U5ctLtaFezDLQshaUqCXLF6j64w6lz5CgVXACe6Ujy0Pr6RkrTaklSVgsAzHLnlHStpSwSpKweFceFK9Ia8U2rRbnjl7/AMzQzGAKlXe8AE51DuBXIHxhXaLTLSCTTSmfuiP2tUwC6lyHODVVn4ADxhLti0lCFHBQDZF3w+uEGPFykohkycIOTFwm35k1eLrAHSnujpyhepFWz5BKUgYl1OeNA8PrFstEsdpMN5qtkG11jv8AOOOKTPNcJZJOQBY5VHNX+s8+EGo5tyZOvCPEBLVWH4kCCEEJxX/UfQiKSbbsvFJaIXFaK8T8Y6JXpf8AmJ/XHkVLaGXsqX2dMSrC7NR6n3xgFWZX4leUfQUo+y2AJV31JU/8U0keT+UZEoByikHtsvlS0I1yyPvHwjR7I24CkS5p3hRK3IvaBXHjC60ShC+ahv8AiGSSmqYuEnB2jWz5ZLukEag18MRC5SCHcsNHcmArDtlaE3F78vIHFP8ACfdBv2hCwbqwSS7MQadNBCeDiaFkjIHs8zfY0Bo+hGB8WPSHVitKiFbqQ3ec4NRTPocuLwknIbLCOnziLs0cAscRQK+sxxi0saywr3RXHleGd+zHptqEzEBaS14ueDaZ+cOrFa5ZCwZaFSziLoDg9MXq8YSdMWtlju8BGg2TaG3VjOvCnzB6Rhy4aVnSxZuVphNs2GEntJanQp2yIr3TxqOcD2ezGXMBN4OQ/Bjixg+z28yyEEJVdLkKq+6U4ZuFHwEFTJ6JpSJdAmgJyZyBXEV8GhTnOHf7lko5New1kWMLWHuGjBQHeKgxd6AYVrhk7jxNllpN2/dUbwCWq6SUkMcWIqNGP3gY8s0spSmoSRhzfLwEEKRMUSStJSTeupIBdhndAOJoCamFRyqTbkrfsE8LgkoOkgPaVjmy2UApQY5Zaa8xygDZ1qRMUygUhNVMzkpoMQ1DXDIc40KdxLIKgTedKuAGRDGqhUV8jAe0LNKWhUwug4ABrzticiHbHjhhE+m0rosvLg5em3sVWbbSxMUhKrwTRJUwJTiApmLivjDQW69vr75pQYDhpGGmLCFhbnEBXXGrYVh0bUEgPMAfCpryAcnHKJy+NyppFlkjbvQit8y9MUpQZzg1WOGp6YQ0kbRUUFKq4OXosOCxBGLDrCS02lRmFqJo5GtHfMtDOQAVMGYM7Z554xtnx4K1/wCHLx4ZvI3F++79xhIlSzLDjGKpWwheK0poK500+mhnZ0S7t5WALKAxwGGWfrFc62oe5IC7pP3i5ZsPF8NYxqc90dZwhpUcicmWLqQb+DDMaj5xmvahEtUyXLlggtemVcEkkhswyX8RGkFqSlKpinZAJUW9OZYRkpSVTZipiu9MJNMk/TARp8KH1Ob6Rj8/J9Kgu2T2fNZTkFqAchhDxc9KkAUN4sQQ4YYuMxlA8iy1ZVBrdBp7olZFJHeTR6ElI+ukab5zsxP6IUXIsko//wA5TcZKB/ti2XsyS37qSRrdR/bE0z5eaUAPqg1ixMyWTRKC35g8OtmekVf4RK/ypP8AR/ZHsXXE/g/6kdEWwpCL2o2x20wIQdxBxGasKcBh1hSH/EfL4xVZ0QW5Axb+YRaMUlRMpW7BlvXeJ6iA5pp8xDBZ4+fyi+w7KM3eKiiWPvHNsk6/WMS2oq2RFOTpGdWIrUY1Fts0mXQNhmL54k5CBpSEk4PzQPSKrIqsY8EroRJmqGBPjBdhtjG6qqVUPX6x5QztWy0LF5ACTww6jKEE2WUljDITjLoVkxyjpj2Srsz2Z7qqpVz+uh5xZZ5y0qAU6gBTgIW2WeFJ7NfQ/Wfr4Q7sKydyYReyV+MDPnrn5wnPBU5Jfk0eLl2ot/gMnbQCkh3PAO48q+UX7PtF5Zus7V1JFXPGJIkAH4VHlFhASQUt6EvjHOc4tcUjqcZJ8mxyi1hSQcA2Hi/mIW2naagSgFSQCCFAYMxxahByiaNoy5YdaQp6ZhiC+I92UK1bXF5wgs5IfDpUPhFMOFLbX4F+XkyypY2q9zSWYKmpa8FvvXiS5PN6Pw1MdayqUAmYLyScBUcalIUTzJTGWRtRSVXpaWWSRwL61+qF4LNrmTTvlm+6H61JziyhODe9P9xLxR8hRclUl8FG2dnYqlqUQasQxA5gsoY6e+B7Ns9RRemXmSKBPvyaH0uYFBgCPoYwLabI6wXNNMsmr/xWJh5DT4s0ZPGbg+L39xSUAZfLnDLZNqTLQe1SCjeuEu6XwDvVL1useGJeKrGalyxrCidLZW90GJhinGdpMRjxZYpc/bqg6ZtBRN2WN3J8+cXSZSsy2vCKEoQgXjQDWAbVtFU0EJ3JeCjmrgOf1xIYnkdRWvkbkzRxq5PfsiW0NoGZ+zST2aSH/OoYVzH1pDTZVlSzqO9nQEcAOXxhbYJCXcj+EaceZiVs2ilAuSy6szRh8Tw8dI1ONLhDowKTb9SfYx2laUoJloL3gHNBdd/M/WUXWSayWN8n8q1h24XwIztn1UoOS7kip6mD0XdUf9P5wyMOKoTOfJjrtzl2g5lR/wB9eseTLSS4I/Uj/wAT6wubig8wg+iDHqSRh/SCP9giSpf235E+X/bj2KGX+fz+EdABn0ITxMWp4N5/GIJSrhEyDofL4xdEF1msvaLSl2GZ0EOLQo0lyxQUyZI9z/CFuzJaiSySFEgB9MT0w8I0eyrKE7xKlFSqkJvBQZg2vPnjGLy8nBG7xMfIFsexwxoSC+OIdq8fSD07ORkirAYcPHB+EPJYTikXjk2fw90XzUBuWfHPGOHPy5t7OqscVpGPtllbJiOBPOM3taxBYJA304tmNRG5twJeg8RlpryjP2qUAQ5LKLYP3izUw1rQNHQ8XM7M3kYlKJhQIZWK3lNFOQ7voRgaVB4jzge3ybiyDA4HOO3GXucOUadGzkWwKD3sscH5geo3eVBHq1hRN45UZqxkpFoUgulWGX1h0g5G0ElnZJHQHngP9PWM8/FhJ3HTNWPy5xXGW0aeUhKk3VBjr9cvKI2yWboS1Bmc+UITtCcP3anD0qH8wH84Ks22FgMtIP8AHunzFYRLx8kdmqHlY5aClWYgi9TjBqgAoEYEClS/JoHRb0pUlSqDXJ8co9nbVlkEISVUqWoOJeEOM2+rNKnjrug6WsFiMHzOJ4aYQRfBL6RiZu0loKghSmJNBWpzB+EQTOtcwd5bcTDH4Lm76E/7hCGuzaTFk4VL/VITbYV2agAyphooON3DvNR3OHDKFUtJTVc1RIwZWHUFvOKpltbuBuOfjD8XhLG7bM2b/UJZFUVRZaVnGaeScG+HrFaLdKSxN9RAokAJSng5JPVoWzVklyXisGNdKqXRit3yfY0n7UWsXUgISck4nmcT5R1nQBlFVhlPj7oZS5bRWktItbe2Tl8vSCZZ/hHQRWhPP66RcEscT4tEAWBR/L1CffHvYg43P0o9wjy6/wB0cwR8DHikkD5P7oKA77Mn8Kf0j4R0QpxjoKAq7IfRPwiC0cfM/CLUyKt5NEFy/rCIQEbNaSggBmvh3qC4IqKPGpsVnBQ5UKOP4tUklRSSS5F1hpV2xyk3S9WwxHjGl2btEKSxCk3RvgF6gUUx1GnCMnl45SjaNniZFGVM0Mq3BmulIAZwCRkxBzPMR3bglkuoGqmBLksOLYVbjSA02lKhuqcDu1zarglycQ2Ac4GJBaiCLtBirMcMa8xjplHF9JL2OtZbMliuQd3wHPX0hJtGYlJB4jLAUJz+vRqubeo4HMurRwRqYVbZuoSbwKiQa4UbGNHjQbmkxWaXGDZjdrrC5l4Zh6cYCup+ngkBzgfA4ZZx4ccD4K+Md9a0cGW3YOUjL3/CPCnjBIVz8D/dHEj6CR6vElSlCiMD6HyeCEWpYpQ8nHpSIU1HiPcmJXBw8DE2wpF32xwxQDzSn4REWv8A9tHgj4RDsh9J+ceXdH6kD3xPJkUi77erJk8m9wEDzLSpWKn5l/fE7mdfEfGPWGv9URyZPFFNNR4/+UcmW+A9YvCeP9R+ETRL4+vwipYXzARk46/CJIlg1Yjg8FLsznVvyn4RUZZcmuVWNKxNgEWTEDnQNWuekObhP3fKF1gS6sDWuHjDJCOAeKsk9SghvgfdFoB+gqORL1iSpYLMK8h/bAB3ZjEivI/CPAkP/wAR6mUr8PoPdBSAfwnxB/3CAAa7x/0x7FvZHX0/ujoLArCHimZLLN74PVM0fxMDTpvPxLQtNlqFVpknQecS2XazKU9HDsoB2fUEVETtChw6/OF6pwBwH9I90WIWjSyrXKW5V+zbFSASlROKjV0voMawWmXLO8ZzJelFPyIBpTJ4yHbB8Q/MRL7YrAzFNoVU9YTLDCTujRDyJxXZsl26TLG6XOIKsn/CnXiYzW1dozJpYBkDUhydTXy+gClY4RfKWOfWLQxRh0VnmlPspShVPiPjHqkKzB8RBt4aefziJI/D5n4w2xFAQlk/c84j2Z/APrpBaiND4q/ujwNofEn1MTZFA6kK0P6YiJZGS/CCQAMvWPb45dILCge5+Vfh84iqSP8ALPgPjF652im6R6mYMyfD5QWFA4s4/wAsjj9GJJs4/AfrrBJWnj5fCOSscfL4RFhRWmzpzB8PnEuwTk8XoXx9PhFiFDXz+UGyQdFlH5vOPP8ADw33q84YpbX68ImhA+m+ERYFVjsBSGr1b3wciVy8okmWnR+o+EXIlj8P9XygsmjxCA2PgofBz4xypf00EBOFPM/BoipAf5n4xWyShSFaE+PvivsyMwOkECzg5P0+cS7G7gG6AegMTZFAjfm8xHQSx1V5/wBsdBYUKjgIqVnyMdHQACTvcfWKD3vGOjokgrGJg6R7o6OiQKl/GJy8Tyjo6IAoziC8Y6OgAiI9OAjo6ACtMSzjyOiUBYjCOMdHRIElZxFOcdHQAepxEES8I6OgIL0YmCUZ8hHR0VZIVL+MXx0dASUJ7w5n0guXlHR0VAajLl7oEnd4x0dASdHR0dAQf//Z" 
+			  alt="menu icon">
+              Our menu
+            </button>
+
+            <button class="btn btn-secondary btn-icon">
+              <img src="./assets/images/arrow.svg" alt="menu icon">
+              About us
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="home-right">
+
+          <img src="./assets/images/food1.png" alt="food image" class="food-img food-1" width="200" loading="lazy">
+          <img src="./assets/images/food2.png" alt="food image" class="food-img food-2" width="200" loading="lazy">
+          <img src="./assets/images/food3.png" alt="food image" class="food-img food-3" width="200" loading="lazy">
+
+          <img src="./assets/images/dialog-1.svg" alt="dialog" class="dialog dialog-1" width="230">
+          <img src="./assets/images/dialog-2.svg" alt="dialog" class="dialog dialog-2" width="230">
+
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-1" width="25">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-2" width="15">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-3" width="30">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-4" width="60">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-5" width="40">
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT SECTION
+      -->
+
+      <section class="about" id="about">
+
+        <div class="about-left">
+
+          <div class="img-box">
+            <img src="./assets/images/about-image.jpg" alt="about image" class="about-img" width="250" loading="lazy">
+          </div>
+
+          <div class="abs-content-box">
+            <div class="dotted-border">
+              <p class="number-lg">17</p>
+              <p class="text-md">Years <br> Experiense</p>
+            </div>
+          </div>
+
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-6" width="20">
+          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-7" width="30">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-8" width="35">
+          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-9" width="80">
+
+        </div>
+
+        <div class="about-right">
+
+          <h2 class="section-title">We are doing more than
+            you expect</h2>
+
+          <p class="section-text">
+            Faudantium magnam error temporibus ipsam aliquid neque quibusdam dolorum, quia ea numquam assumenda mollitia
+            dolorem
+            impedit. Voluptate at quis exercitationem officia temporibus adipisci quae totam enim dolorum, assumenda.
+            Sapiente
+            soluta nostrum reprehenderit a velit obcaecati facilis vitae magnam tenetur neque vel itaque inventore eaque
+            explicabo
+            commodi maxime! Aliquam quasi, voluptates odio.
+          </p>
+
+          <p class="section-text">
+            Consectetur adipisicing elit. Cupiditate nesciunt amet facilis numquam, nam adipisci qui voluptate voluptas
+            enim
+            obcaecati veritatis animi nulla, mollitia commodi quaerat ex, autem ea laborum.
+          </p>
+
+          <img src="./assets/images/signature.png" alt="signature" class="signature" width="150">
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #SERVICES SECTION
+      -->
+
+      <section class="services" id="services">
+
+        <div class="service-card">
+
+          <p class="card-number">01</p>
+
+          <h3 class="card-heading">We are located in the city center</h3>
+
+          <p class="card-text">
+            Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">02</p>
+
+          <h3 class="card-heading">Fresh ingredients from organic farms</h3>
+
+          <p class="card-text">
+            Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">03</p>
+
+          <h3 class="card-heading">Own fast delivery. 30 min Maximum</h3>
+
+          <p class="card-text">
+            Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">04</p>
+
+          <h3 class="card-heading">Professional, experienced chefs</h3>
+
+          <p class="card-text">
+            Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <p class="card-number">05</p>
+
+          <h3 class="card-heading">The highest standards of service</h3>
+
+          <p class="card-text">
+            Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #PRODUCT SECTION
+      -->
+
+      <section class="product" id="menu">
+
+        <h2 class="section-title">Most popular dishes</h2>
+
+        <p class="section-text">
+          Consectetur numquam poro nemo veniam
+          eligendi rem adipisci quo modi.
+        </p>
+
+        <div class="products-grid">
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Stracciatella</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>11
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Chevrefrit au miel</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>14
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Vegan</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Saumon Gravlax</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>9
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge red">
+                  <ion-icon name="flame"></ion-icon>
+                  <p>Hot</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Croustillant de poisson</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>4
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Vegan</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Carpaccio de daurade</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>6
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+                <div class="wrapper">
+                  <h3 class="product-name">Chevrefrit au miel</h3>
+
+                  <p class="product-price">
+                    <span class="small">$</span>14
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <button class="btn btn-primary btn-icon">
+          <img src="./assets/images/menu.svg" alt="menu icon">
+          Full menu
+        </button>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #TESTIMONIALS SECTION
+      -->
+
+      <section class="testimonials" id="testimonials">
+
+        <h2 class="section-title">What our customers say?</h2>
+
+        <p class="section-text">
+          Consectetur numquam poro nemo veniam
+          eligendi rem adipisci quo modi.
+        </p>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonials-card">
+
+            <h4 class="card-title">Very tasty</h4>
+
+            <div class="testimonials-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+
+            <p class="testimonials-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi
+              inventore possimus
+              laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
+              tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam
+              labore,
+              aliquam dolor harum!
+            </p>
+
+            <div class="customer-info">
+              <div class="customer-img-box">
+                <img src="./assets/images/testimonials1.jpg" alt="customer image" class="customer-img" width="100" loading="lazy">
+              </div>
+
+              <h5 class="customer-name">Emma Newman</h5>
+            </div>
+
+          </div>
+
+          <div class="testimonials-card">
+          
+            <h4 class="card-title">I have lunch here every day</h4>
+          
+            <div class="testimonials-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          
+            <p class="testimonials-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi
+              inventore possimus
+              laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
+              tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam
+              labore,
+              aliquam dolor harum!
+            </p>
+          
+            <div class="customer-info">
+              <div class="customer-img-box">
+                <img src="./assets/images/testimonials2.jpg" alt="customer image" class="customer-img" width="100" loading="lazy">
+              </div>
+          
+              <h5 class="customer-name">Paul Trueman</h5>
+            </div>
+          
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+
+
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-wrapper">
+
+        <a href="#">
+          <img src="./assets/images/logo-footer.svg" alt="logo" class="footer-brand" width="130">
+        </a>
+
+        <div class="social-link">
+
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+
+          <a href="#">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+
+        </div>
+
+        <p class="copyright">&copy; Copyright 2022 Foodhub. All Rights Reserved.</p>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/foodhub.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
